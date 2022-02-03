@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Polling System
+        </title>
+        <link rel="stylesheet" href="index.css">
+        
+    </head>
+    <body>
+        <div>
+            <h1 class='heading'>POLLING SYSTEM</h1>
+        </div>
+        <div class="poll-question">
+            Which language do you prefer?<br>
+            Java or Python
+        </div>
+        <div>
+            <form class="form-inline">
+                <label for="name">Name: </label>
+                <input type="name" id="name" placeholder="Enter Name" name="name">
+                <label for="mob">Mobile no. :</label>
+                <input type="mob" id="mob" placeholder="Enter Mobile NO." name="mob">
+                <label for="lang">Choose a language: </label>
+                <select name="lang" id="lang">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                </select>
+                <button type="submit" onclick="update">Submit</button>
+              </form>
+        </div>
+        <div class="results">
+            <h2 class="heading">Results:👀🤞</h2>
+            <div>
+                <div class="tag">
+                    <span>Java: 40%</span>
+                    <span id="j_per"></span>
+                </div>
+                <div class="tag">
+                    <span>Python: 60%</span>
+                    <span id="p_per"></span>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
